@@ -7,7 +7,7 @@ An Interactions Endpoint URL is a public, unauthenticated endpoint. Anyone can s
 
 Discord validates the URL when you save it in your app's settings. Validation fails unless your endpoint already does both of the following.
 
-## 1. Acknowledge PING requests
+## Acknowledge PING requests
 
 Discord sends a `POST` request with a `PING` payload, `type: 1`. Your endpoint returns a `200` response with a `PONG` payload, which is also `type: 1`.
 
@@ -22,7 +22,7 @@ def my_command():
 
 Provide a valid `Content-Type` when you respond to a `PING`. A correct payload with a missing content type still fails validation.
 
-## 2. Validate the signature headers
+## Validate the signature headers
 
 Every interaction arrives with two headers:
 
@@ -38,7 +38,7 @@ Two details cause most failures: verify against the **raw** request body as a st
 ```js
 const nacl = require("tweetnacl");
 
-// Your public key can be found on your application in the Developer Portal
+// The public key comes from your application in the Developer Portal
 const PUBLIC_KEY = "APPLICATION_PUBLIC_KEY";
 
 const signature = req.get("X-Signature-Ed25519");
@@ -62,7 +62,7 @@ if (!isVerified) {
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-# Your public key can be found on your application in the Developer Portal
+# The public key comes from your application in the Developer Portal
 PUBLIC_KEY = 'APPLICATION_PUBLIC_KEY'
 
 verify_key = VerifyKey(bytes.fromhex(PUBLIC_KEY))
