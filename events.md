@@ -40,5 +40,5 @@ Gateway events are gated by intents, and some are privileged. Request only the i
 ## Next steps
 
 - [Choosing a transport](./get-started/choosing-a-transport.md) — Gateway or HTTP for interactions
-- [API reference](./api-reference.md) — versions, authentication, and rate limits
+- [API reference](./http-api.md) — versions, authentication, and rate limits
 - [Interactions overview](./interactions/overview.md) — the user-initiated half of the platform

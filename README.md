@@ -36,7 +36,7 @@ Every bot, Activity, and Social SDK integration is backed by an application regi
 
 ## Reference
 
-- [API reference](./api-reference.md) — Base URL, versions, authentication, and rate limits {book-open}
+- [API reference](./http-api.md) — Base URL, versions, authentication, and rate limits {book-open}
 - [Events and the Gateway](./events.md) — Real-time events over WebSocket and webhooks {radio}
 - [Deploy on Cloudflare Workers](./guides/hosting-on-cloudflare-workers.md) — Host an HTTP interactions app with no server {cloud}
 

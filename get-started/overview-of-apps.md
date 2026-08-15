@@ -49,7 +49,7 @@ Pick the APIs based on the Discord features your app touches. Most bots use the 
 
 ### HTTP API — read and change Discord resources
 
-A REST API for core resources: channels, guilds, users, and messages. Use it to retrieve information about a resource, or to create, update, and delete one. See the [API reference](../api-reference.md) for the base URL, versions, and authentication.
+A REST API for core resources: channels, guilds, users, and messages. Use it to retrieve information about a resource, or to create, update, and delete one. See the [API reference](../http-api.md) for the base URL, versions, and authentication.
 
 ### Gateway API — receive real-time events
 

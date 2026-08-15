@@ -68,4 +68,4 @@ Autocomplete is a separate interaction type. When a user is still typing an opti
 
 - [Receiving and responding](./receiving-and-responding.md) — handle the interaction your command produces
 - [Message components](../components/message-components.md) — add buttons and menus to the reply
-- [API reference](../api-reference.md) — authentication and versioning for the registration call
+- [API reference](../http-api.md) — authentication and versioning for the registration call

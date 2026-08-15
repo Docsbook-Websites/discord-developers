@@ -38,7 +38,7 @@ Both are covered in [securing your endpoint](../interactions/securing-your-endpo
 
 ## You can use both APIs
 
-The transport question is about receiving. Regardless of which one you pick, your app calls the HTTP API to create messages, edit responses, register commands, and read resources. See the [API reference](../api-reference.md).
+The transport question is about receiving. Regardless of which one you pick, your app calls the HTTP API to create messages, edit responses, register commands, and read resources. See the [API reference](../http-api.md).
 
 ## Next steps
 
