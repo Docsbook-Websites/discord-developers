@@ -38,8 +38,7 @@ Two details cause most failures: verify against the **raw** request body as a st
 ```js
 const nacl = require("tweetnacl");
 
-// The public key comes from your application in the Developer Portal
-const PUBLIC_KEY = "APPLICATION_PUBLIC_KEY";
+const PUBLIC_KEY = "APPLICATION_PUBLIC_KEY"; // from the Developer Portal
 
 const signature = req.get("X-Signature-Ed25519");
 const timestamp = req.get("X-Signature-Timestamp");
@@ -62,8 +61,7 @@ if (!isVerified) {
 from nacl.signing import VerifyKey
 from nacl.exceptions import BadSignatureError
 
-# The public key comes from your application in the Developer Portal
-PUBLIC_KEY = 'APPLICATION_PUBLIC_KEY'
+PUBLIC_KEY = 'APPLICATION_PUBLIC_KEY'  # from the Developer Portal
 
 verify_key = VerifyKey(bytes.fromhex(PUBLIC_KEY))
 
